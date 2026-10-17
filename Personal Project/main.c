@@ -77,7 +77,7 @@ int main(void)
 
   /* USER CODE BEGIN 1 */
 
-  const uint32_t magicno = 0xDEADBEEF; // Magic number to identify the flash memory page
+  const uint32_t magicno = ########; // Magic number to identify the flash memory page
 
   typedef struct { // Structure to hold the thermocouple data
     float temperatureC;
@@ -386,7 +386,7 @@ int main(void)
     return clampedOutput;
   }
 
-  float decouplingMatrix[2][2] = {{1.0f, 1.0f}, {0.2f, -0.2f}}; // Initialize the decoupling matrix to the identity matrix
+  float decouplingMatrix[2][2] = {{####, ####}, {####, ####}}; // Initialize the decoupling matrix to the identity matrix
   float PwmMatrix[2] = {0.0f, 0.0f};
 
   void MatrixCalc(float AvgTempPIDOutput, float AvgGradientPIDOutput, float decouplingMatrix[2][2])
